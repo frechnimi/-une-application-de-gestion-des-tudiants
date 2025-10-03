@@ -21,7 +21,7 @@ void AjouterEtudient::on_SaveEtudient_clicked()
     QString massar = ui->MassarEtudient->text();
     QString dateN = ui->dateNaisEtudient->text();
 
-    qDebug()<<"nom :"<<nom<<"prenom :"<<prenom<<"CNE :"<<CNE<<"massar :"<<massar<<"dateN :"<<dateN;
+    qDebug()<<"nom :"<<nom<<"prenom :"<<prenom<<"CNE :"<<CNE<<"massar :"<<massar<<"date de Naissance :"<<dateN;
 
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
     database.setDatabaseName("C:/Users/hp/OneDrive/Desktop/Documents/gestionEdatabase/mygestion.db");
@@ -53,4 +53,5 @@ void AjouterEtudient::on_SaveEtudient_clicked()
     database.close();
     this->close();
 }
+
 
